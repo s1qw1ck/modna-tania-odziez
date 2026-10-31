@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#E3241B">
+<!-- Wersja demo: nie indeksować, dopóki właściciel nie zaakceptuje strony -->
+<meta name="robots" content="noindex, nofollow">
+<title>Modna Tania Odzież ze Skandynawii – Przemyśl i Rzeszów</title>
+<meta name="description" content="Odzież używana prosto ze Skandynawii. Sklepy w Przemyślu i Rzeszowie. Nowy towar w każdą środę, w sobotę −30%, w poniedziałek −50%, we wtorek 5 zł i 3 zł.">
+<meta property="og:title" content="Modna Tania Odzież ze Skandynawii">
+<meta property="og:description" content="Przemyśl · Rzeszów. Nowy towar w każdą środę, potem z każdym dniem taniej.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23E3241B'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial' font-weight='900' font-size='30' text-anchor='middle' fill='%23FFE600'%3ETO%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--red:#E3241B;--red-dk:#B8160F;--yellow:#FFE600;--ink:#141414;--paper:#fff;--muted:#666;--line:#ececec;
+  --bar:72px;--safe:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;font-family:"Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--paper);
+  padding-bottom:calc(var(--bar) + var(--safe));-webkit-tap-highlight-color:transparent;overflow-x:hidden}
+a{color:inherit}
+img,iframe{max-width:100%}
+.wrap{max-width:1100px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-left)) 0 max(16px,env(safe-area-inset-right))}
+.display{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.5px;line-height:1}
+.flagi{display:inline-flex;gap:8px}
+.flagi svg{height:20px;width:auto;border-radius:2px;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+section{scroll-margin-top:64px}
+
+/* ---------- TOP BAR ---------- */
+nav{position:sticky;top:0;z-index:20;background:var(--red);color:#fff;border-bottom:4px solid var(--yellow)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:12px}
+nav .logo{font-family:Anton,sans-serif;font-size:21px;text-decoration:none;white-space:nowrap}
+nav .logo b{color:var(--yellow);font-weight:400}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-weight:700;font-size:14px;text-transform:uppercase}
+nav ul a{text-decoration:none;display:block;padding:8px 0}
+nav ul a:hover{color:var(--yellow)}
+nav .mob{display:none}
+@media(max-width:760px){
+  nav ul .desk{display:none}
+  nav ul{gap:6px}
+  nav ul a{font-size:12px;padding:7px 10px;border-radius:999px;background:rgba(0,0,0,.18)}
+}
+@media(max-width:350px){nav .logo{font-size:17px}nav ul a{padding:6px 8px;font-size:11px}}
+
+/* ---------- HERO ---------- */
+.hero{background:var(--red);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-140px;bottom:-180px;width:540px;height:540px;border-radius:50%;background:var(--yellow);z-index:0}
+.hero::before{content:"";position:absolute;left:58%;top:28px;width:90px;height:90px;z-index:0;opacity:.55;
+  background-image:radial-gradient(circle,#fff 4px,transparent 5px);background-size:22px 22px}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr 1fr;
+  grid-template-areas:"tytul karta" "tekst karta" "przyciski karta";column-gap:32px;padding-top:44px;padding-bottom:56px;align-items:center}
+.h-tytul{grid-area:tytul}
+.h-tekst{grid-area:tekst}
+.h-btns{grid-area:przyciski}
+.dzis-card{grid-area:karta}
+.hero h1{font-size:clamp(48px,9vw,96px);margin:14px 0 8px;text-shadow:3px 3px 0 var(--ink)}
+.hero h1 .modna{display:block;font-size:.5em;letter-spacing:.32em;margin-bottom:.12em}
+.hero .sub{font-family:Anton,sans-serif;font-size:clamp(22px,4vw,36px);color:var(--yellow);text-transform:uppercase;margin:0}
+.h-tekst p{font-size:18px;line-height:1.5;max-width:520px;margin:18px 0 22px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:12px 22px;border-radius:999px;font-weight:800;
+  text-decoration:none;text-transform:uppercase;font-size:14px;border:3px solid var(--ink);transition:transform .15s,box-shadow .15s;cursor:pointer}
+.btn:active{transform:translateY(2px)}
+.btn.y{background:var(--yellow);color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
+.btn.w{background:#fff;color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
+.dzis-card{background:#fff;color:var(--ink);border:4px solid var(--ink);border-radius:18px;padding:22px;box-shadow:8px 8px 0 var(--ink);transform:rotate(1.5deg)}
+.dzis-card .lab{font-weight:800;text-transform:uppercase;font-size:13px;color:var(--red);letter-spacing:.03em}
+.dzis-card .big{font-family:Anton,sans-serif;font-size:clamp(48px,12vw,68px);line-height:1;margin:6px 0;color:var(--red)}
+.dzis-card .opis{font-weight:700;margin:0 0 12px;font-size:16px}
+.dzis-card .jutro{font-size:14px;color:var(--muted);border-top:2px dashed var(--line);padding-top:10px}
+.dzis-card .stat{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:800;margin-bottom:10px}
+.dzis-card .stat::before{content:"";width:9px;height:9px;border-radius:50%;background:#aaa}
+.dzis-card .stat.on{color:#137a35}.dzis-card .stat.on::before{background:#1fbf54;box-shadow:0 0 0 3px #d6f5e0}
+
+@media(max-width:760px){
+  .hero .wrap{grid-template-columns:1fr;grid-template-areas:"tytul" "karta" "tekst" "przyciski";padding-top:24px;padding-bottom:36px}
+  .hero h1{margin:12px 0 6px;text-shadow:2px 2px 0 var(--ink)}
+  .hero h1 .modna{letter-spacing:.24em}
+  .hero::after{width:340px;height:340px;right:-150px;bottom:-250px}
+  .hero::before{left:auto;right:16px;top:20px;width:66px;height:66px}
+  .dzis-card{margin:22px 4px 0 0;transform:rotate(-1deg);box-shadow:5px 5px 0 var(--ink);padding:18px}
+  .h-tekst p{font-size:16px;margin:24px 0 18px}
+  .h-btns .btn{flex:1 1 100%}
+}
+
+/* ---------- SECTIONS ---------- */
+section{padding:64px 0}
+h2.display{font-size:clamp(34px,7vw,54px);margin:0 0 10px}
+h2 .hl{background:var(--yellow);padding:0 8px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.lead{color:var(--muted);margin:0 0 28px;font-size:17px;line-height:1.5}
+@media(max-width:760px){section{padding:44px 0}.lead{font-size:15px;margin-bottom:20px}}
+
+/* ---------- WEEK ---------- */
+.tydzien{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+.dz{border:3px solid var(--ink);border-radius:14px;padding:14px 10px;text-align:center;background:#fff;min-width:0}
+.dz .n{font-weight:800;font-size:13px;text-transform:uppercase}
+.dz .h{font-family:Anton,sans-serif;font-size:26px;margin:8px 0 4px;color:var(--red);line-height:1.05;overflow-wrap:anywhere}
+.dz .o{font-size:12px;color:var(--muted);line-height:1.35}
+.dz.dzis{background:var(--yellow);box-shadow:5px 5px 0 var(--ink);transform:translateY(-4px)}
+.dz .tag{display:none}
+.dz.dzis .tag{display:inline-block;background:var(--ink);color:#fff;font-size:10px;padding:2px 6px;border-radius:5px;margin-left:4px;vertical-align:1px}
+.dz.zam .h{color:#aaa}
+@media(max-width:900px){
+  .tydzien{grid-template-columns:1fr;gap:8px}
+  .dz{display:grid;grid-template-columns:118px 1fr;grid-template-rows:auto auto;column-gap:12px;text-align:left;padding:12px 14px;align-items:center;border-width:2px}
+  .dz .n{grid-row:1/3;font-size:13px}
+  .dz .h{margin:0;font-size:24px}
+  .dz .o{font-size:13px}
+  .dz.dzis{transform:none;box-shadow:4px 4px 0 var(--ink);border-width:3px}
+}
+
+/* ---------- PRICES ---------- */
+.ceny{background:var(--red);color:#fff}
+.ceny .lead{color:#ffe1de}
+.cennik{background:#fff;color:var(--ink);border-radius:18px;border:4px solid var(--ink);margin-top:58px;position:relative}
+.tab{width:100%;border-collapse:collapse;table-layout:fixed}
+.tab col.k{width:15%}
+.tab th,.tab td{padding:12px 10px;text-align:center;border-bottom:1px solid var(--line);vertical-align:middle}
+.tab tr:last-child td{border-bottom:0}
+.tab th:first-child,.tab td:first-child{text-align:left;padding-left:16px}
+.tab thead th{background:var(--ink);color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:.04em;font-weight:800;line-height:1.2;position:relative}
+.tab thead th:first-child{border-top-left-radius:13px}
+.tab thead th:last-child{border-top-right-radius:13px}
+.tab thead th small{display:block;color:var(--yellow);font-size:14px;margin-top:3px;letter-spacing:0}
+.tab thead th.sr{background:var(--yellow);color:var(--ink)}
+.tab thead th .kr{display:none}
+.tab tbody tr:nth-child(even){background:#fafafa}
+.tab td.p{font-size:15px;line-height:1.35}
+.tab td{white-space:nowrap}
+.tab td.p{white-space:normal}
+.tab td b{font-size:16px;font-weight:800}
+.tab td small{font-size:11px;color:var(--muted);font-weight:600}
+.tab td.sr{background:#fff9c4}
+.tab td.sr b{font-size:17px}
+.tab td.ra b{color:var(--red)}
+.tab td.akt{background:#ffe3e0}
+.tab td.sr.akt{background:#fff59d}
+.tab thead th .dzis{display:inline-block;background:var(--red);color:#fff;font-size:9px;padding:1px 5px;border-radius:4px;margin-top:4px}
+/* naklejka NOWY TOWAR nad kolumną Śr–Pt */
+.naklejka{position:absolute;bottom:100%;left:50%;transform:translate(-50%,-6px) rotate(-6deg);white-space:nowrap;
+  background:var(--yellow);color:var(--red);font-family:Anton,sans-serif;font-weight:400;font-size:20px;line-height:1;letter-spacing:.5px;
+  padding:7px 12px;border:3px solid var(--ink);border-radius:10px;box-shadow:3px 3px 0 var(--ink);animation:wiggle 2.4s ease-in-out infinite}
+.naklejka::after{content:"";position:absolute;left:50%;top:100%;transform:translateX(-50%);border:8px solid transparent;border-top-color:var(--ink)}
+@keyframes wiggle{0%,100%{transform:translate(-50%,-6px) rotate(-6deg)}50%{transform:translate(-50%,-10px) rotate(-3deg)}}
+.przyp{font-size:13px;margin-top:14px;color:#ffe1de}
+@media(max-width:760px){
+  .cennik{border-width:3px;border-radius:14px;margin-top:62px}
+  .tab col.k{width:16%}
+  .tab col.pk{width:36%}
+  .tab th,.tab td{padding:9px 2px}
+  .tab th:first-child,.tab td:first-child{padding-left:8px;padding-right:4px}
+  .tab thead th{font-size:10.5px;letter-spacing:0}
+  .tab thead th:first-child{border-top-left-radius:10px}
+  .tab thead th:last-child{border-top-right-radius:10px}
+  .tab thead th small{font-size:12px}
+  .tab thead th .dl{display:none}
+  .tab thead th .kr{display:inline}
+  .tab td.p{font-size:12px;line-height:1.3;overflow-wrap:anywhere;hyphens:auto}
+  .tab td b{font-size:14px}
+  .tab td.sr b{font-size:15px}
+  .tab td small{display:block;font-size:9.5px;line-height:1.1}
+  .naklejka{font-size:15px;padding:5px 7px;border-width:2px;box-shadow:2px 2px 0 var(--ink)}
+}
+@media(max-width:350px){.tab td.p{font-size:11px}.tab td b{font-size:13px}.tab td.sr b{font-size:14px}.naklejka{font-size:13px}}
+
+/* ---------- STORE ---------- */
+.sklep-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:24px;align-items:stretch}
+.karta{border:3px solid var(--ink);border-radius:18px;padding:22px;background:#fff}
+.status{display:inline-flex;align-items:center;gap:8px;font-weight:800;padding:6px 12px;border-radius:999px;background:#f1f1f1;font-size:14px}
+.status::before{content:"";width:10px;height:10px;border-radius:50%;background:#aaa}
+.status.on{background:#e7f8ec;color:#137a35}.status.on::before{background:#1fbf54}
+.adres{font-family:Anton,sans-serif;font-size:clamp(28px,7vw,36px);margin:14px 0 4px;line-height:1.05}
+.obok{color:var(--muted);margin:0 0 16px;line-height:1.4}
+.godz{width:100%;font-size:15px;border-collapse:collapse}
+.godz td{padding:9px 0;border-bottom:1px dashed var(--line)}
+.godz td:last-child{text-align:right}
+.godz tr.dzis td{font-weight:800;color:var(--red)}
+.godz-uwaga{font-size:12.5px;color:var(--muted);margin:10px 0 0}
+.sklep-grid{grid-template-columns:1fr 1fr}
+.godz-tytul{font-family:Anton,sans-serif;font-size:24px;text-transform:uppercase;margin-bottom:6px}
+@media(max-width:760px){
+  .sklep-grid{grid-template-columns:1fr;gap:16px}
+  .karta{padding:18px}
+  .karta .btns .btn{flex:1 1 100%}
+}
+
+/* ---------- OPENING ---------- */
+.otwarcie{background:var(--yellow);border:4px solid var(--ink);border-radius:18px;padding:22px;margin-bottom:28px;box-shadow:8px 8px 0 var(--ink)}
+.otwarcie .display{font-size:clamp(32px,8vw,48px);color:var(--red);text-shadow:2px 2px 0 var(--ink)}
+.otwarcie p{font-weight:800;font-size:17px;margin:10px 0 0;line-height:1.4}
+.licz{display:grid;grid-template-columns:repeat(4,minmax(0,90px));gap:8px;margin-top:14px}
+.licz div{background:var(--ink);color:#fff;border-radius:12px;padding:10px 4px;text-align:center}
+.licz b{display:block;font-family:Anton,sans-serif;font-size:32px;font-weight:400;line-height:1.1;font-variant-numeric:tabular-nums}
+.licz span{font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+@media(max-width:760px){.otwarcie{padding:18px;box-shadow:5px 5px 0 var(--ink);margin-right:4px}.licz{grid-template-columns:repeat(4,1fr)}.licz b{font-size:28px}}
+
+/* ---------- RULES / FOOTER ---------- */
+.zasady{background:#f6f6f6}
+.zasady ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.zasady li{background:#fff;border-left:6px solid var(--red);border-radius:10px;padding:14px 16px;font-size:16px;line-height:1.45}
+footer{background:var(--ink);color:#fff;padding:44px 0 28px;font-size:14px;line-height:1.5;border-top:6px solid var(--red)}
+.f-marka .display{font-size:30px}
+.f-marka .display b{color:var(--yellow);font-weight:400}
+.f-marka p{margin:6px 0 10px;color:#bbb}
+.f-tytul{font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:22px;margin:32px 0 14px;color:var(--yellow)}
+.f-sklepy{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.f-sklep{background:#222;border:2px solid #333;border-radius:16px;padding:18px}
+.f-sklep .m{font-family:Anton,sans-serif;font-size:26px;text-transform:uppercase;line-height:1}
+.f-sklep .u{color:#aaa;font-size:13px;margin:4px 0 14px}
+.f-sklep .nowy{background:var(--red);color:#fff;font-size:10px;padding:2px 6px;border-radius:6px;margin-left:6px;vertical-align:5px;font-family:"Open Sans",sans-serif;font-weight:800}
+.soc{display:flex;flex-direction:column;gap:8px}
+.soc a,.soc span{display:flex;align-items:center;gap:10px;min-height:48px;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:800;font-size:14px;color:#fff;overflow:hidden}
+.soc a small,.soc span small{display:block;font-weight:600;font-size:12px;opacity:.85;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.soc a > div,.soc span > div{min-width:0}
+.soc svg{flex:0 0 24px;width:24px;height:24px}
+.soc .fb{background:#1877F2}
+.soc .ig{background:linear-gradient(45deg,#F58529,#DD2A7B 55%,#8134AF)}
+.soc .brak{background:#2c2c2c;color:#888;border:2px dashed #444}
+.soc a:active{transform:scale(.98)}
+.f-copy{margin:28px 0 0;color:#777;font-size:12px}
+@media(max-width:760px){.f-sklepy{grid-template-columns:1fr}}
+
+/* ---------- STICKY STORE PICKER ---------- */
+.wybor{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--ink);color:#fff;border-top:4px solid var(--yellow);padding-bottom:var(--safe)}
+.wybor .wrap{display:flex;align-items:center;gap:12px;height:var(--bar)}
+.wybor .t{font-weight:800;text-transform:uppercase;font-size:13px;white-space:nowrap}
+.wybor .opcje{display:flex;gap:8px;flex:1;min-width:0}
+.wybor button{flex:1;min-width:0;max-width:260px;cursor:pointer;font:inherit;font-weight:800;font-size:15px;padding:8px 12px;border-radius:12px;
+  border:3px solid #fff;background:transparent;color:#fff;text-align:left;line-height:1.15;transition:background .15s,color .15s,border-color .15s}
+.wybor button small{display:block;font-weight:600;font-size:12px;opacity:.75;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wybor button[aria-pressed="true"]{background:var(--yellow);color:var(--ink);border-color:var(--yellow)}
+.wybor button:active{transform:scale(.97)}
+.wybor .nowy{background:var(--red);color:#fff;font-size:10px;padding:2px 6px;border-radius:6px;margin-left:4px;vertical-align:2px}
+@media(max-width:560px){.wybor .t{display:none}.wybor .wrap{gap:0}.wybor button{max-width:none;font-size:15px}}
+@media(max-width:350px){.wybor button{padding:7px 9px;font-size:14px}.wybor button small{font-size:11px}.wybor .nowy{display:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#" class="logo">Modna <b>Tania Odzież</b></a>
+    <ul>
+      <li class="desk"><a href="#tydzien">Tydzień</a></li>
+      <li><a href="#ceny">Cennik</a></li>
+      <li><a href="#sklep">Dojazd</a></li>
+      <li class="desk"><a href="#zasady">Zasady</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="h-tytul">
+      <div id="flagi-hero"></div>
+      <h1 class="display"><span class="modna">Modna</span>Tania Odzież</h1>
+      <p class="sub">Prosto ze Skandynawii</p>
+    </div>
+    <div class="dzis-card" id="dzis-card"></div>
+    <div class="h-tekst">
+      <p>Odzież używana ze Szwecji, Norwegii i Danii. <b>W każdą środę całkowita wymiana towaru</b> – a potem z każdym dniem taniej.</p>
+    </div>
+    <div class="btns h-btns">
+      <a class="btn y" href="#ceny">Zobacz cennik</a>
+      <a class="btn w" href="#sklep" id="hero-adres">Jak dojechać</a>
+    </div>
+  </div>
+</header>
+
+<section id="tydzien">
+  <div class="wrap">
+    <h2 class="display">Jak działa <span class="hl">nasz tydzień</span></h2>
+    <p class="lead">Im później w tygodniu, tym taniej. Największy wybór – w środę rano.</p>
+    <div class="tydzien" id="tydzien-grid"></div>
+  </div>
+</section>
+
+<section id="ceny" class="ceny">
+  <div class="wrap">
+    <h2 class="display">Cennik</h2>
+    <p class="lead">W środę nowy towar, a potem z każdym dniem taniej. Ceny po rabacie już wyliczone.</p>
+    <div class="cennik"><table class="tab" id="cennik"></table></div>
+    <p class="przyp">Ceny po rabacie wyliczone automatycznie. Mogą się różnić w zależności od dostawy – aktualne zawsze w sklepie i na Facebooku.</p>
+  </div>
+</section>
+
+<section id="sklep">
+  <div class="wrap">
+    <div id="otwarcie-box"></div>
+    <h2 class="display">Sklep <span class="hl" id="sklep-miasto"></span></h2>
+    <p class="lead">Zmień sklep na dolnym pasku – adres i godziny zmienią się same.</p>
+    <div class="sklep-grid">
+      <div class="karta">
+        <span class="status" id="status"></span>
+        <div class="adres" id="adres"></div>
+        <p class="obok" id="obok"></p>
+        <div class="btns" style="margin-top:18px">
+          <a class="btn y" id="trasa" target="_blank" rel="noopener">Wyznacz trasę</a>
+          <a class="btn w" id="fb" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="karta">
+        <div class="godz-tytul">Godziny otwarcia</div>
+        <table class="godz" id="godziny"></table>
+        <p class="godz-uwaga" id="godz-uwaga"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="zasady" class="zasady">
+  <div class="wrap">
+    <h2 class="display">Dobrze <span class="hl">wiedzieć</span></h2>
+    <ul id="zasady-lista"></ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-marka">
+      <div class="display">Modna <b>Tania Odzież</b></div>
+      <p>Prosto ze Skandynawii · Przemyśl · Rzeszów</p>
+      <div id="flagi-stopka"></div>
+    </div>
+    <h3 class="f-tytul">Obserwuj swój sklep</h3>
+    <div class="f-sklepy" id="f-sklepy"></div>
+    <p class="f-copy">© <span id="rok"></span> Modna Tania Odzież ze Skandynawii</p>
+  </div>
+</footer>
+
+<div class="wybor" role="group" aria-label="Wybierz sklep">
+  <div class="wrap">
+    <span class="t">Twój sklep:</span>
+    <div class="opcje">
+      <button type="button" data-sklep="przemysl">Przemyśl<small>ul. Mickiewicza 28</small></button>
+      <button type="button" data-sklep="rzeszow">Rzeszów<span class="nowy">NOWY</span><small>ul. Targowa 5</small></button>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const d = dzisIndeks();
+
+$("flagi-hero").innerHTML = FLAGI;
+
+// Tydzień od poniedziałku
+$("tydzien-grid").innerHTML = [1,2,3,4,5,6,0].map(i => {
+  const t = TYDZIEN[i];
+  return `<div class="dz ${i===d?'dzis':''} ${i===0?'zam':''}">
+    <div class="n">${t.dzien}<span class="tag">dziś</span></div><div class="h">${t.haslo}</div><div class="o">${t.opis}</div></div>`;
+}).join("");
+
+// Cennik: ceny po rabacie liczone z ceny regularnej
+const zl = n => (Math.round(n * 100) / 100).toFixed(2).replace(".", ",").replace(",00", "") + " zł";
+function rabat(cena, proc) {
+  const m = cena.match(/^([\d,.]+)\s*zł(.*)$/);
+  return m ? zl(parseFloat(m[1].replace(",", ".")) * (1 - proc)) + m[2] : "−" + proc * 100 + "%";
+}
+// "20 zł" -> <b>20</b><small>zł</small>, "19 zł/kg" -> <b>19</b><small>zł/kg</small>
+const komorka = t => t.replace(/^([\d,]+)\s*(.*)$/, "<b>$1</b> <small>$2</small>");
+const kol = { 3: 0, 4: 0, 5: 0, 6: 1, 1: 2, 2: 3 }[d];
+const dzisTag = i => i === kol ? '<br><span class="dzis">DZIŚ</span>' : "";
+$("cennik").innerHTML =
+  `<colgroup><col class="pk"><col class="k"><col class="k"><col class="k"><col class="k"></colgroup>
+  <thead><tr>
+    <th>Produkt</th>
+    <th class="sr"><span class="naklejka">Nowy towar!</span><span class="dl">Śr – Pt</span><span class="kr">Śr–Pt</span>${dzisTag(0)}</th>
+    <th><span class="dl">Sobota</span><span class="kr">Sob</span><small>−30%</small>${dzisTag(1)}</th>
+    <th><span class="dl">Poniedziałek</span><span class="kr">Pon</span><small>−50%</small>${dzisTag(2)}</th>
+    <th><span class="dl">Wtorek</span><span class="kr">Wt</span><small>5/3 zł</small>${dzisTag(3)}</th>
+  </tr></thead><tbody>` +
+  CENNIK.map(([p, c, w]) => `<tr><td class="p">${p}</td>` +
+    [[c, "sr"], [rabat(c, .3), "ra"], [rabat(c, .5), "ra"], [w, ""]]
+      .map(([v, k], i) => `<td class="${k} ${i === kol ? 'akt' : ''}">${komorka(v)}</td>`).join("") + `</tr>`).join("") +
+  `</tbody>`;
+
+$("zasady-lista").innerHTML = ZASADY.map(z => `<li>${z}</li>`).join("") +
+  `<li>W środę rano wykładamy całkowicie nowy towar – warto przyjść wcześnie!</li>`;
+// Stopka: osobne linki FB/Instagram dla każdego sklepu
+const IKONA_FB = '<svg viewBox="0 0 24 24" fill="#fff"><path d="M24 12a12 12 0 10-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0024 12z"/></svg>';
+const IKONA_IG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>';
+$("flagi-stopka").innerHTML = FLAGI;
+$("rok").textContent = new Date().getFullYear();
+$("f-sklepy").innerHTML = Object.values(SKLEPY).map(s => `
+  <div class="f-sklep">
+    <div class="m">${s.miasto}${s.otwarcie && new Date() < new Date(s.otwarcie) ? '<span class="nowy">NOWY</span>' : ''}</div>
+    <div class="u">${s.ulica}</div>
+    <div class="soc">
+      <a class="fb" href="${s.facebook}" target="_blank" rel="noopener">${IKONA_FB}<div>Facebook<small>Modna Tania Odzież – ${s.miasto}</small></div></a>
+      ${s.instagram
+        ? `<a class="ig" href="${s.instagram}" target="_blank" rel="noopener">${IKONA_IG}<div>Instagram<small>${s.instagramNazwa}</small></div></a>`
+        : `<span class="brak">${IKONA_IG}<div>Instagram<small>już wkrótce</small></div></span>`}
+    </div>
+  </div>`).join("");
+
+let timer;
+function pokazSklep(id) {
+  const s = SKLEPY[id];
+  try { localStorage.setItem("sklep", id); } catch (e) {}
+  document.querySelectorAll(".wybor button").forEach(b => b.setAttribute("aria-pressed", b.dataset.sklep === id));
+  const przed = s.otwarcie && new Date() < new Date(s.otwarcie);
+  const st = statusSklepu(s);
+
+  // Karta "dziś" w hero – zależy od wybranego sklepu
+  const jutro = TYDZIEN[(d + 1) % 7];
+  $("dzis-card").innerHTML = przed
+    ? `<div class="lab">${s.miasto} · nowy sklep</div><div class="big">Otwarcie 4.11</div>
+       <p class="opis">Środa, godz. 8:00 – ${s.ulica}. Cały sklep pełen nowego towaru!</p>
+       <div class="jutro"><a href="#sklep">Odliczanie i dojazd ↓</a></div>`
+    : `<div class="stat ${st.otwarte?'on':''}">${s.miasto}: ${st.tekst}</div>
+       <div class="lab">Dziś jest ${TYDZIEN[d].dzien.toLowerCase()}</div><div class="big">${TYDZIEN[d].haslo}</div>
+       <p class="opis">${TYDZIEN[d].opis}</p>
+       <div class="jutro">Jutro (${jutro.dzien.toLowerCase()}): <b>${jutro.haslo}</b></div>`;
+
+  $("sklep-miasto").textContent = s.miasto;
+  $("adres").textContent = s.ulica;
+  $("obok").textContent = [s.kod, s.obok].filter(Boolean).join(" · ");
+  $("status").textContent = st.tekst;
+  $("status").className = "status" + (st.otwarte ? " on" : "");
+  const dzisPn = (d + 6) % 7;
+  $("godziny").innerHTML = s.godziny.map(([dz, g], i) => `<tr class="${i===dzisPn?'dzis':''}"><td>${dz}</td><td>${g}</td></tr>`).join("");
+  $("godz-uwaga").textContent = id === "rzeszow" ? "Godziny w Rzeszowie mogą się jeszcze zmienić – sprawdź na Facebooku." : "";
+  $("trasa").href = trasaHref(s);
+  $("fb").href = s.facebook;
+  $("hero-adres").textContent = "Dojazd – " + s.miasto;
+
+  clearInterval(timer);
+  const box = $("otwarcie-box");
+  if (przed) {
+    box.innerHTML = `<div class="otwarcie"><div class="display">Wielkie otwarcie!</div>
+      <p>Środa, 4 listopada, godz. 8:00<br>${s.ulica}, ${s.miasto}</p>
+      <div class="licz" id="licz"></div></div>`;
+    const tick = () => {
+      const o = odliczanie(s.otwarcie);
+      $("licz").innerHTML = [["d","dni"],["h","godz"],["m","min"],["s","sek"]].map(([k,l]) => `<div><b>${String(o[k]).padStart(2,"0")}</b><span>${l}</span></div>`).join("");
+      if (new Date() >= new Date(s.otwarcie)) pokazSklep(id);
+    };
+    tick(); timer = setInterval(tick, 1000);
+  } else box.innerHTML = "";
+}
+
+document.querySelectorAll(".wybor button").forEach(b => b.addEventListener("click", () => pokazSklep(b.dataset.sklep)));
+let start = "przemysl";
+try { start = localStorage.getItem("sklep") || start; } catch (e) {}
+pokazSklep(SKLEPY[start] ? start : "przemysl");
+</script>
+</body>
+</html>
